@@ -41,19 +41,19 @@ body {
 #img-text {
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   left: 10px;
   bottom: 5px;
 }
 
 .wd-tuit-title {
   color: grey;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .wd-tuit-author {
   color: black;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -65,12 +65,12 @@ body {
 
 .wd-tuit-count {
   color: grey;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 100;
 }
 
 .wd-tuit-account {
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 100;
 }
