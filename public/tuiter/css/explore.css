@@ -8,6 +8,7 @@ body {
 .list-group-item {
   background-color: black;
   color: #b0b6bd;
+  padding-left: 0;
 }
 
 .list-group-item.active {
@@ -36,6 +37,12 @@ body {
   top: 8px;
   left: 13px;
   color: #a4a8ac;
+}
+
+.fa-stack {
+  height: 1.5em;
+  line-height: 1.5em;
+  width: 1em;
 }
 
 .fas.fa-cog {
