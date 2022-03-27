@@ -1,0 +1,14 @@
+{
+  "username": "Frankie L",
+  "handle": "frankiel",
+  "profilePicture": "/images/icon.jpg",
+  "bannerPicture": "/images/banner.jpg",
+  "bio": "A little bit about me",
+  "website": "youtube.com/webdevtv",
+  "location": "Malden, MA",
+  "dateOfBirth": "2000-01-01",
+  "dateJoined": "2022-01-01",
+  "followingCount": 321,
+  "followersCount": 123,
+  "tuitsCount": 521
+}

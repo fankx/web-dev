@@ -1,18 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const NavigationSidebar = ({ active = 'explore' }) => {
+const NavigationSidebar = () => {
+  const { pathname } = useLocation();
+
   return (
     <div className='rounded list-group'>
-      <Link to='/' className='list-group-item list-group-item-action'>
+      <Link to='/labs' className='list-group-item list-group-item-action'>
         <span className='me-3'>
           <i className='fa-brands fa-twitter'></i>
         </span>
       </Link>
       <Link
-        to='/tuiter/home'
+        to='/tuiter'
         className={`d-flex list-group-item list-group-item-action ${
-          active === 'Home' ? 'active' : ''
+          pathname === '/tuiter' ? 'active' : ''
         }`}
       >
         <span className='me-3'>
@@ -23,7 +25,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
       <Link
         to='/tuiter/explore'
         className={`d-flex list-group-item list-group-item-action ${
-          active === 'Explore' ? 'active' : ''
+          pathname.includes('explore') ? 'active' : ''
         }`}
       >
         <span className='me-3'>
@@ -55,7 +57,12 @@ const NavigationSidebar = ({ active = 'explore' }) => {
         </span>
         <span className='d-flex d-none d-xl-block'>Lists</span>
       </Link>
-      <Link to='#' className='d-flex  list-group-item list-group-item-action'>
+      <Link
+        to='/tuiter/profile'
+        className={`d-flex list-group-item list-group-item-action ${
+          pathname.includes('profile') ? 'active' : ''
+        }`}
+      >
         <span className='me-3'>
           <i className='fa-solid fa-user'></i>
         </span>

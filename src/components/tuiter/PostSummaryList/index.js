@@ -5,7 +5,7 @@ const PostSummaryList = () => {
   return (
     <>
       {posts.map((post) => (
-        <PostSummaryListItem post={post} />
+        <PostSummaryListItem post={post} key={post._id} />
       ))}
     </>
   );
