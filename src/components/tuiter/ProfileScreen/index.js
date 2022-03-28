@@ -56,7 +56,7 @@ const ProfileScreen = () => {
             <i className='fa-solid fa-location-dot'></i>&nbsp;{profile.location}
           </span>
           <span className='me-2'>
-            <i className='fa-solid fa-child-reaching'></i>&nbsp;
+            <i className='fa-solid fa-cake-candles'></i>&nbsp;
             {profile.dateOfBirth}
           </span>
           <span className='me-2'>
