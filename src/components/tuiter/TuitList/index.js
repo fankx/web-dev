@@ -1,9 +1,14 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import TuitListItem from './TuitListItem.js';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { findAllTuits } from '../actions/tuitsAction.js';
 
 const TuitList = () => {
   const tuits = useSelector((state) => state.tuits);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => findAllTuits(dispatch), [dispatch]);
 
   return (
     <>
